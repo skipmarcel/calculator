@@ -26,5 +26,9 @@ window.alert
 "Your addition sum is:" + "  " + (number1) + " " + "+" + " " + (number2) + " " + "=" + "  " + add(number1, number2) + "\n"
 + "Your subtraction sum is:" + "  " + (number1) + " " + "-" + " " + (number2) + " " + "=" + "  " + subtract(number1, number2) + "\n" 
 + "Your multiplication sum is:" + " " + multiply(number1, number2) + "\n"
-+ "Your division sm is:" + " " + divide(number1, number2)
++ "Your division sum is:" + " " + divide(number1, number2)
 );
+
+// things I learned in this excersise: 
+//    • /n is a line break
+//    • convert any numerical string into a number using the unary plus operator: var c = +a + +b; (or refer to line 5)
