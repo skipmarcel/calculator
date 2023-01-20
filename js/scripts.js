@@ -1,8 +1,8 @@
 
   
   function add(number1, number2) {
-    return (parseInt(number1)) + (parseInt(number2));
-    
+    // return (parseInt(number1)) + (parseInt(number2)); <-- this worked, but I simplified on line 5
+    return (+number1) + (+number2);
   }
 
   function subtract(number1, number2) {
@@ -21,8 +21,10 @@
   const number2 = prompt("Now your second number:");
 
 
-window.alert("Your addition sum is:" + " " + add(number1, number2) + "\n"
-+ "Your subtraction sum is:" + " " + subtract(number1, number2) + "\n" 
+window.alert
+(
+"Your addition sum is:" + "  " + (number1) + " " + "+" + " " + (number2) + " " + "=" + "  " + add(number1, number2) + "\n"
++ "Your subtraction sum is:" + "  " + (number1) + " " + "-" + " " + (number2) + " " + "=" + "  " + subtract(number1, number2) + "\n" 
 + "Your multiplication sum is:" + " " + multiply(number1, number2) + "\n"
 + "Your division sm is:" + " " + divide(number1, number2)
 );
